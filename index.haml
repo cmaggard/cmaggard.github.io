@@ -1,0 +1,13 @@
+\---
+\layout: default
+\title: index
+\---
+
+#post
+  %h3
+    &laquo;
+    %a{:href => "{{ site.posts.first.url }}" }
+      \{{ site.posts.first.title }}
+    &raquo;
+  {{ site.posts.first.content }}
+

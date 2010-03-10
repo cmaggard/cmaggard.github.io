@@ -1,7 +1,24 @@
 !!!
 %head
-  %title {{ title }}
+  %title Under Construction - {{ page.title }}
+  %meta{ :name => 'author', :content => 'Cody Maggard' }
+  %link{ :type => 'text/css', :rel => 'stylesheet', :href=> '/css/reset.css' }
+  / Blueprint
+  %link{ :tyle => 'text/css', :rel => 'stylesheet', :href => '/css/screen.css', :media => 'screen, projection' }
+  %link{ :tyle => 'text/css', :rel => 'stylesheet', :href => '/css/print.css', :media => 'print' }
+  /[if lt IE 8]
+    %link{ :tyle => 'text/css', :rel => 'stylesheet', :href => '/css/ie.css', :media => 'screen' }
+  /[endif]
 
+  %link{ :type => 'text/css', :rel => 'stylesheet', :href=> '/css/cmaggard.css' }
 %body
-  {{ content }}
+  .container
+    #header.span-24.last
+      %h2 -Under Construction-
+    #content.span-18
+      {{ content }}
+    #sidebar.span-6.last
+      SIDEBAR STUFF
+    #footer.span-24.last
+      (c) Cody Maggard 2010
 

@@ -22,7 +22,7 @@ or two icky issues at the time with nested partials, but I found some hackish wa
 longer have that old source due to hard drive failure, (always make backups!) and I've lost the time I used to have for side 
 projects, but I'm sure I'll rediscover the magic once Rails 3 is finally released and I get a little more free time.
 
-There was only one tiny problem in my way: Github's version of jekyll, being standard, doesn't support Haml and Sass out of the
+There was only one tiny problem in my way: Github's version of Jekyll, being standard, doesn't support Haml and Sass out of the
 box. Facing going back to HTML tag soup, I did what any reasonable developer would do: make the tools work anyway.
 
 The first problem I thought of was one of synchronization. Out of necessity, obviousness, (and an increasing reliance) I must 

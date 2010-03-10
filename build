@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+converters = { /\.sass/ => ["sass", ".css"], /\.haml/ => ["haml", ".html"] }
+
+changed_files = IO.popen("git diff --name-only --cached").readlines.map(&:chomp)
+
+converters.each_key do |k|
+  convert_us = changed_files.grep(k)
+  convert_us.each do |f|
+    filename = f.split(".").shift
+    IO.popen([converters[k][0], f, ">", filename + converters[k][1]].join(" "))
+  end
+end
+

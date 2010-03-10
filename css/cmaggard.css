@@ -1,3 +1,25 @@
-a {
+#header {
+  margin-top: 18px; }
+
+#content h3 {
+  font-size: 24px;
+  text-align: right;
+  margin-right: 18px;
+  padding-right: 18px;
+  border-right: 1px solid #cccccc; }
+#content p {
+  font-size: 18px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  margin: 18px; }
+#content a {
   color: #dd3333;
   text-shadow: #030303 2 2 1; }
+#content .gist {
+  margin: 18px;
+  padding-left: 12px; }
+
+#footer {
+  padding: 9px;
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 12px; }

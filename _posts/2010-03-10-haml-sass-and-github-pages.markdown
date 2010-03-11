@@ -33,7 +33,7 @@ server-side. I instantly decided on a pre-commit hook. For those unfamiliar, git
 wanted my script to make sure I had already compiled my Haml and Sass templates into HTML/CSS, respectively, before the commit
 would be allowed to go through. My quickly-hacked-together script looks a little like the following:
 
-<script src="http://gist.github.com/328293.js?file=gistfile1"></script> 
+<script src="http://gist.github.com/328293.js?file=gistfile1" type="text/javascript"></script> 
 
 My primary concern was just to show me which HTML/Haml and Sass/CSS files were essentially out of sync with each other. I
 don't necessarily want the HTML/CSS generation automated on commit just yet, but I knew I wanted their generation automated.
@@ -53,7 +53,7 @@ a fully-functional Makefile that would auto-compile any changed Haml or Sass tem
 establshed in my muscle memory for some time: 'make'. I now have a completely intuitive build and commit chain for this blog,
 and it proved to be quite the learning experience.
 
-<script src="http://gist.github.com/328338.js?file=gistfile1.txt"></script>
+<script src="http://gist.github.com/328338.js?file=gistfile1.txt" type="text/javascript"></script>
 
 As for what to write next, I'm sure I'll figure something out. If nothing else I can always talk smack about 
 [DHH](http://www.loudthinking.com/) for a few quick pageviews.

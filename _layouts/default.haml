@@ -1,24 +1,33 @@
 !!!
-%head
-  %title Under Construction - {{ page.title }}
-  %meta{ :name => 'author', :content => 'Cody Maggard' }
-  %link{ :type => 'text/css', :rel => 'stylesheet', :href=> '/css/reset.css' }
-  / Blueprint
-  %link{ :tyle => 'text/css', :rel => 'stylesheet', :href => '/css/screen.css', :media => 'screen, projection' }
-  %link{ :tyle => 'text/css', :rel => 'stylesheet', :href => '/css/print.css', :media => 'print' }
-  /[if lt IE 8]
-    %link{ :tyle => 'text/css', :rel => 'stylesheet', :href => '/css/ie.css', :media => 'screen' }
-  /[endif]
+%html{ :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %title Under Construction - {{ page.title }}
+    %meta{ "http-equiv" => "Content-Type", :content => "text/html; charset=utf-8" }
+    %meta{ :name => 'author', :content => 'Cody Maggard' }
+    / Blueprint
+    %link{ :type => 'text/css', :rel => 'stylesheet', :href => '/css/screen.css', :media => 'screen, projection' }
+    %link{ :type => 'text/css', :rel => 'stylesheet', :href => '/css/print.css', :media => 'print' }
+    /[if lt IE 8]
+      %link{ :type => 'text/css', :rel => 'stylesheet', :href => '/css/ie.css', :media => 'screen' }
 
-  %link{ :type => 'text/css', :rel => 'stylesheet', :href=> '/css/cmaggard.css' }
-%body
-  .container
-    #header.span-24.last
-      %h2 -Under Construction-
-    #content.span-18
-      {{ content }}
-    #sidebar.span-6.last
-      SIDEBAR STUFF
-    #footer.span-24.last
-      (c) Cody Maggard 2010
+    %link{ :type => 'text/css', :rel => 'stylesheet', :href=> '/css/cmaggard.css' }
+  %body
+    .container
+      #header.span-24.last
+        %h2 -Under Construction-
+      #leftbar.span-3
+        .links
+          %a{:href => '/about.html'} me
+          %a{:href => '/projects.html'} my work
+          %br
+          %a{:href => 'http://twitter.com/cmaggard'} twitter
+          %a{:href => 'http://www.facebook.com/cmaggard'} facebook
+          %a{:href => 'http://cmaggard.posterous.com'} posterous
+      #content.span-18
+        {{ content }}
+      #rightbar.span-3.last
+        .links
+          categories
+      #footer.span-24.last
+        (c) Cody Maggard 2010
 
